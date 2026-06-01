@@ -188,13 +188,13 @@ API 規格書
 
 - 回傳參數
 
-| 參數名稱    | 類型                | 說明             | 範例 |
-| :---------- | :----------------- | :--------------- | :-- |
-| StatusCode  | Int                | API執行狀態代碼   | 200 |
-| Message     | String             | API執行狀態說明   | success |
-| Data        | Object             | 回傳資料物件      | 請看下方 |
-| ├─type      | String             | 修課類別          | 篩選類別 (all, humanities, social, sciences, computer, residential, chinese, foreign, PE) |
-| ├─courses   | `List<object>`       | 該類別下的修課清單 | `請看下面範例` |
+| 參數名稱            | 類型                | 說明             | 範例 |
+| :-------------------| :----------------- | :--------------- | :-- |
+| StatusCode          | Int                | API執行狀態代碼   | 200 |
+| Message             | String             | API執行狀態說明   | success |
+| Data                | Object             | 回傳資料物件      | 請看下方 |
+| ├─type              | String             | 修課類別          | 篩選類別 (all, humanities, social, sciences, computer, residential, chinese, foreign, PE) |
+| ├─selected_classes  | `List<object>`       | 該類別下的修課清單 | `請看下面範例` |
 
 - 範例
     ```
@@ -203,7 +203,7 @@ API 規格書
         "Message": "success",
         "Data": {
             "type": "humanities",
-            "courses":[
+            "selected_classes":[
                 {
                 "class_name":"哲學概論",
                 "credits":3,
