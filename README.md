@@ -33,8 +33,8 @@ API 規格書
 - 範例
     ```
     {
-        "StudentNumber":"111703888",
-        "StudentPassword":"test01"
+        "student_no":"111703888",
+        "password":"test01"
     }
     ```  
 
@@ -44,7 +44,7 @@ API 規格書
 | :---------- | :----------- | :---------------------------- | :-- |
 | StatusCode  | Int          | API執行狀態代碼                | 200 |
 | Message     | String       | API執行狀態說明                | success |
-| Data        | object       | 回傳資料以及判斷是哪位學生的參數 | "Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.xxx.yyy","StudentNumber": "111703888","Name": "王小明" |
+| Data        | object       | 回傳資料以及判斷是哪位學生的參數 | "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.xxx.yyy","student_number": "111703888","name": "王小明" |
 
 - 範例
     ```
@@ -52,9 +52,9 @@ API 規格書
         "StatusCode":200,
         "Message":"success",
         "Data": {
-            "Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.xxx.yyy",
-            "StudentNumber": "111703888",
-            "Name": "王小明"
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.xxx.yyy",
+            "student_number": "111703888",
+            "name": "王小明"
         }
     }
     ```
@@ -102,60 +102,60 @@ API 規格書
         "StatusCode":200,
         "Message":"success",
         "Data": {
-            "Student_Info": {
-                "Name": "王小明",
+            "student_info": {
+                "name": "王小明",
                 "main_department": "資訊科學學系",
                 "secondary_department": None,
                 "sub_main1_department": "數位內容學程",
                 "sub_main2_department": None
             },
-            "General_Education_Graduation_Credits": {
-                "General_Education_Required_Credits": 28,
-                "General_Education_Taken": 18
+            "general_education_graduation_credits": {
+                "general_education_required_credits": 28,
+                "general_education_credits_taken": 18
             },
-            "CoreGeneral_Education": {
-                "Required":3,
-                "Taken": 2
+            "core_general_education": {
+                "required_courses":3,
+                "taken_courses": 2
             },
-            "Humanities":{
-                "Humanities_Maximum_Credits":7,
-                "Humanities_Required_Credits":3,
-                "Humanities_Credit_Taken": 2
+            "humanities":{
+                "humanities_maximum_credits":7,
+                "humanities_required_credits":3,
+                "humanities_credit_taken": 2
             },
-            "Social":{
-                "Social_Maximum_Credits":7,
-                "Social_Required_Credits":3,
-                "Social_Credit_Taken": 2
+            "social":{
+                "social_maximum_credits":7,
+                "social_required_credits":3,
+                "social_credit_taken": 2
             },
-            "Sciences":{
-                "Sciences_Maximum_Credits":7,
-                "Sciences_Required_Credits":3,
-                "Sciences_Credit_Taken": 2
+            "sciences":{
+                "sciences_maximum_credits":7,
+                "sciences_required_credits":3,
+                "sciences_credit_taken": 2
             },
-            "Computer":{
-                "Computer_Maximum_Credits":0,
-                "Computer_Required_Credits":0,
-                "Computer_Credit_Taken": 0
+            "computer":{
+                "computer_maximum_credits":0,
+                "computer_required_credits":0,
+                "computer_credit_taken": 0
             },
-            "Residential":{
-                "Residential_Maximum_Credits":3,
-                "Residential_Required_Credits":0,
-                "Residential_Credit_Taken": 1
+            "residential":{
+                "residential_maximum_credits":3,
+                "residential_required_credits":0,
+                "residential_credit_taken": 1
             },
-            "Foreign":{
-                "Foreign_Maximum_Credits":6,
-                "Foreign_Required_Credits":6,
-                "Foreign_Credit_Taken": 3
+            "foreign":{
+                "foreign_maximum_credits":6,
+                "foreign_required_credits":6,
+                "foreign_credit_taken": 3
             },
-            "Chinese":{
-                "Chinese_Maximum_Credits":6,
-                "Chinese_Required_Credits":3,
-                "Chinese_Credit_Taken": 3
+            "chinese":{
+                "chinese_maximum_credits":6,
+                "chinese_required_credits":3,
+                "chinese_credit_taken": 3
             },
-            "PE":{
-                "PE_Maximum_Credits":4,
-                "PE_Required_Credits":4,
-                "PE_Credit_Taken": 3
+            "pe":{
+                "pe_maximum_credits":4,
+                "pe_required_credits":4,
+                "pe_credit_taken": 3
             }
         }
     }
