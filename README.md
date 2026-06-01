@@ -77,7 +77,7 @@ API 規格書
 取得登入學生的名字、科系、雙主修、輔修，已拿多少通識學分，以及該類型最多拿多少，所有類型的通識學分資訊
 
 ### 規格
-- API:`/api/student/dashboard`
+- API:`/api/dashboard`
 - HTTP Method：GET
 - 呼叫參數
 
