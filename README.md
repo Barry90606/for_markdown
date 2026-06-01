@@ -194,7 +194,7 @@ API 規格書
 | Message     | String             | API執行狀態說明   | success |
 | Data        | Object             | 回傳資料物件      | 請看下方 |
 | ├─type      | String             | 修課類別          | 篩選類別 (all, humanities, social, sciences, computer, residential, chinese, foreign, PE) |
-| ├─courses   | List<object>       | 該類別下的修課清單 | `請看下面範例` |
+| ├─courses   | `List<object>`       | 該類別下的修課清單 | `請看下面範例` |
 
 - 範例
     ```
