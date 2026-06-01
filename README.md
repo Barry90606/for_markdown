@@ -23,10 +23,10 @@ API 規格書
 - HTTP Method：POST
 - 呼叫參數
 
-| 參數名稱        | 必填 | 資料類型 | 說明 |
-| :-------------- | :--: | :------ | :--- |
-| StudentNumber   | V    | String  | 帳號，也是學生的學號 |
-| StudentPassword | V    | String  | 密碼 |
+| 參數名稱    | 必填 | 資料類型 | 說明 |
+| :----------| :--: | :------ | :--- |
+| student_no | V    | String  | 帳號，也是學生的學號 |
+| password   | V    | String  | 密碼 |
 
 註:兩個欄位皆為必填
 
@@ -184,7 +184,7 @@ API 規格書
 | 參數名稱        | 必填 | 資料類型 | 說明 |
 | :-------------- | :--: | :------ | :--- |
 | Authorization   | V    | String  | Bearer JWT Token |
-| Type            | V    | String  | 篩選類別 (all, humanities, social, sciences, computer, residential, chinese, foreign, PE) |
+| type            | V    | String  | 篩選類別 (all, humanities, social, sciences, computer, residential, chinese, foreign, PE) |
 
 - 回傳參數
 
