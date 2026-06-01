@@ -94,7 +94,7 @@ API 規格書
 | :-- | :-- | :-- | :-- |
 | StatusCode  | Int                | API執行狀態代碼 | 200 |
 | Message     | String             | API執行狀態說明 | success |
-| Data        | `List<object>` | 回傳學生資料    | 請看下面範例 |
+| Data        | `List<object>` | 回傳學生資料    | `請看下面範例` |
 
 - 範例
     ```
