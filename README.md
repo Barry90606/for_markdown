@@ -94,7 +94,7 @@ API 規格書
 | :-- | :-- | :-- | :-- |
 | StatusCode  | Int                | API執行狀態代碼 | 200 |
 | Message     | String             | API執行狀態說明 | success |
-| Data        | List<object> | 回傳學生資料    | 請看下面範例 |
+| Data        | `List<object>` | 回傳學生資料    | 請看下面範例 |
 
 - 範例
     ```
@@ -193,7 +193,7 @@ API 規格書
 | StatusCode  | Int                | API執行狀態代碼   | 200 |
 | Message     | String             | API執行狀態說明   | success |
 | Data.type   | String             | 修課類別          | 篩選類別 (all, humanities, social, sciences, computer, residential, chinese, foreign, PE) |
-| Data.courses| List<object>       | 該類別下的修課清單 | `請看下面範例` |
+| Data.courses| `List<object>`       | 該類別下的修課清單 | `請看下面範例` |
 
 - 範例
     ```
