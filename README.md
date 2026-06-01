@@ -40,11 +40,11 @@ API 規格書
 
 - 回傳參數
 
-| 參數名稱 | 類型 | 說明 | 範例 |
-| :-- | :-- | :-- | :-- |
-| StatusCode  | Int | API執行狀態代碼 | 200 |
-| Message  | String | API執行狀態說明 | success |
-| Data | List<object> | 回傳資料以及判斷是哪位學生的參數 | "Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.xxx.yyy","StudentNumber": "111703888","Name": "王小明" |
+| 參數名稱    | 類型          | 說明                          | 範例 |
+| :---------- | :----------- | :---------------------------- | :-- |
+| StatusCode  | Int          | API執行狀態代碼                | 200 |
+| Message     | String       | API執行狀態說明                | success |
+| Data        | object       | 回傳資料以及判斷是哪位學生的參數 | "Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.xxx.yyy","StudentNumber": "111703888","Name": "王小明" |
 
 - 範例
     ```
@@ -63,7 +63,7 @@ API 規格書
 
 | 狀態碼 | 狀態描述 |
 | :----- | :------ |
-| 200    | 登入成功 |
+| 200    | 取得資料成功 |
 | 400    | 參數錯誤（缺少帳號或密碼） |
 | 401    | 帳號或密碼錯誤 |
 
@@ -77,7 +77,7 @@ API 規格書
 取得登入學生的名字、科系、雙主修、輔修，已拿多少通識學分，以及該類型最多拿多少，所有類型的通識學分資訊
 
 ### 規格
-- API:`/api/dashboard`
+- API:`/api/student/dashboard`
 - HTTP Method：GET
 - 呼叫參數
 
@@ -192,15 +192,16 @@ API 規格書
 | :---------- | :----------------- | :--------------- | :-- |
 | StatusCode  | Int                | API執行狀態代碼   | 200 |
 | Message     | String             | API執行狀態說明   | success |
-| Data.type   | String             | 修課類別          | 篩選類別 (all, humanities, social, sciences, computer, residential, chinese, foreign, PE) |
-| Data.courses| `List<object>`       | 該類別下的修課清單 | `請看下面範例` |
+| Data        | Object             | 回傳資料物件      | 請看下方 |
+| ├─type      | String             | 修課類別          | 篩選類別 (all, humanities, social, sciences, computer, residential, chinese, foreign, PE) |
+| ├─courses   | List<object>       | 該類別下的修課清單 | `請看下面範例` |
 
 - 範例
     ```
     {
         "StatusCode": 200,
         "Message": "success",
-        "Data": 
+        "Data": {
             "type": "humanities",
             "courses":[
                 {
@@ -211,6 +212,7 @@ API 規格書
                 "ispassed":True
                 }
             ]
+        }
     }
     ```  
 
